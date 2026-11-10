@@ -1,0 +1,121 @@
+.call_to_action{
+	@include mbglobal-container;
+
+	.call-to-action-wrapper{
+		background-color: var(--bg-light-blue);
+		border-radius: var(--margin-bottom-40);
+		padding: 80px;
+
+		@media (max-width:900px) {
+			padding: 50px 30px;
+		}
+	}
+
+	.logo-cta{
+		margin: 0 0 100px;
+		width: 75px;
+		height: 85px;
+
+		@media (max-width:900px) {
+			margin: 0 0 30px;
+		}
+
+		@media (max-width:600px) {
+			width: 35px;
+		height: 45px;
+		margin: 0 0 15px;
+		}
+	}
+
+	.call-to-action-content{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 28px;
+		align-items: flex-start;
+
+		@media (max-width:1050px) {
+			flex-direction: column;
+		}
+
+	}
+
+	.call-to-action-title{
+		font-family: 'Inter', sans-serif;
+		font-size: var(--fz-85);
+		line-height: var(--lh-1-2);
+		font-weight: 400;
+		color: var(--dark-color);
+		flex: 1;
+		
+
+		@media (max-width:1240px) {
+			font-size: var(--fz-60);
+		}
+
+		@media (max-width:600px) {
+			font-size: var(--fz-40);
+		}
+
+		@media (max-width:400px) {
+			font-size: var(--fz-30);
+		}
+	}
+
+	.divider-cta{
+		display: flex;
+		flex-direction: column;
+		gap: 61px;
+		flex: 1;
+		max-width: 490px;
+		@media (max-width:600px) {
+			gap: 30px;
+		}
+	}
+
+	.call-to-action-subtitle{
+		font-family: 'Inter', sans-serif;
+		font-size: var(--fz-20);
+		line-height: var(--lh-1-6);
+		font-weight: 400;
+		color: var(--dark-color);
+		text-align: right;
+
+		@media (max-width:1050px) {
+			text-align: left;
+		}
+
+		@media (max-width:600px) {
+			font-size: var(--fz-16);
+		}
+	}
+
+	.call-to-action-button{
+		background-color: var(--bg-orange);
+		color: var(--color-white);
+		font-family: 'Inter', sans-serif;
+		font-size: var(--fz-16);
+		line-height: var(--lh-1-2);
+		font-weight: 600;
+		padding: 20px 40px;
+		border: none;
+		border-radius: 40px;
+		transition: background-color 0.3s ease;
+		 margin-left: auto;
+
+		&:hover{
+			background-color: var(--dark-color);
+		}
+
+		 @media (max-width:1050px) {
+			margin: 0 auto 0 0;
+		}
+
+		@media (max-width:400px) {
+			font-size: var(--fz-14);
+			padding: 20px 20px;
+		}
+		 
+	}
+}
